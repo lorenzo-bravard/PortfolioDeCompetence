@@ -3,70 +3,46 @@
         "id": 1,
         "title": "Stage",
         "description": "Une superbe application android, Animiru est l'application révé pour tout fan d'animé ! Cette aplication permet de retrouvé à quel épisode nous nous sommes arreté dans notre visionnage !",
-        "A.C": "AC34.02 | Développer des dispositifs interactifs sophistiqués",
-        "Situation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
-        "tache": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
-        "action": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
-        "resultat": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
-        "auto-eval": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in",
+        "A.C": ["AC34.02 | Développer des dispositifs interactifs sophistiqués", "AC35.04 | Défendre un projet de manière convaincante", "AC34.04 | Concevoir et développer des composants logiciels, plugins ou extensions", "AC34.O5 | Maitriser l'hébergement et le déploiement d'applications"],
+        "Situation": "",
+        "tache": "",
+        "action": "",
+        "resultat": "",
+        "auto-eval": "",
         "images": [
-            "https://picsum.photos/200/300",
             "https://picsum.photos/200/300",
             "https://picsum.photos/200/300"
         ]
     },
     {
         "id": 2,
-        "title": "Stage",
-        "description": "Une superbe application android, Animiru est l'application révé pour tout fan d'animé ! Cette aplication permet de retrouvé à quel épisode nous nous sommes arreté dans notre visionnage !",
-        "A.C": "AC34.02 | Développer des dispositifs interactifs sophistiqués",
-        "Situation": "",
-        "tache": "",
+        "title": "Giv'Up !",
+        "description": "Une application web de quiz se joue de 2 à 4 joueurs. Le jeu se déroule en tour par tour, où le premier joueur commence avec un mini-jeu aléatoire. Il y a 4 mini-jeux différents :Un puzzle, Un jeu où il faut classer les pochettes d'album du plus ancien au plus récent, Un jeu où il faut associer la pochette à l'artiste correspondant, Ces trois premiers mini-jeux se jouent en solo. Le quatrième mini-jeu se joue avec tous les participants. Le but est de retrouver la musique après que les paroles aient été traduites en anglais (si elles sont en français) ou en français (si elles sont dans une autre langue). Pour répondre, il faut buzzer en utilisant les touches du clavier. A la fin la personne qui a marque le plus de point gagne",
+        "A.C": ["AC34.02 | Développer des dispositifs interactifs sophistiqués", "AC34.01 | Développer à l’aide d’un framework de développement côté client", "AC35.02 | Maîtriser la qualité en projet Web ou multimédia"],
+        "Situation": "Objectif :  Faire un projet sur le théme de la musique, Idée : Quizz lier a la musique.",
+        "tache": ["1.Créer le déroulement du quizz ","2.Chercher des bonnes idées de mini-jeux","3.Faire le maquettage","4.Créer les différents minis jeux"],
         "action": "",
         "resultat": "",
-        "auto-eval": "",
+        "auto-eval": "Le projet a été vraiment interessant à développer car nous avons tout pensé de A à Z. De plus, je trouve que le quizz est plutôt de qualité même si il manque plus de mini-jeux pour ne pas tomber tout sur la même chose.",
         "images": [
-            "https://picsum.photos/200/300",
-            "https://picsum.photos/200/300"
+            "./img/GivUp-accueil.png",
+            "./img/GivUp-settings.png",
+            "./img/GivUp-puzzle.png",
+            "./img/GivUp-Relier.png",
+            "./img/GivUp-Timeline.png",
+            "./img/GivUp-final.png"
         ]
     },
     {
         "id": 3,
-        "title": "Stage",
-        "description": "Une superbe application android, Animiru est l'application révé pour tout fan d'animé ! Cette aplication permet de retrouvé à quel épisode nous nous sommes arreté dans notre visionnage !",
-        "A.C": "AC34.02 | Développer des dispositifs interactifs sophistiqués",
+        "title": "Entrepreunariat",
+        "description": "  ",
+        "A.C": ["AC35.02 | Maîtriser la qualité en projet Web ou multimédia", "AC35.03 | Concevoir un projet d’entreprise innovante en définissant le nom", "AC35.01 | Piloter un produit, un service ou une équipe"],
         "Situation": "",
         "tache": "",
         "action": "",
         "resultat": "",
         "auto-eval": "",
-        "images": [
-            "https://picsum.photos/200/300",
-            "https://picsum.photos/200/300"
-        ]
-    },
-    {
-        "id": 4,
-        "title": "Projet 4",
-        "description": "Description du projet 4...",
-        "images": [
-            "https://picsum.photos/200/300",
-            "https://picsum.photos/200/300"
-        ]
-    },
-    {
-        "id": 5,
-        "title": "Projet 5",
-        "description": "Description du projet 5...",
-        "images": [
-            "https://picsum.photos/200/300",
-            "https://picsum.photos/200/300"
-        ]
-    },
-    {
-        "id": 6,
-        "title": "Projet 6",
-        "description": "Description du projet 6...",
         "images": [
             "https://picsum.photos/200/300",
             "https://picsum.photos/200/300"

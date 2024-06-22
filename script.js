@@ -23,12 +23,6 @@ function invertColor(rgb) {
     return `rgb(${r},${g},${b})`;
 }
 
-var circles = document.querySelectorAll('.circle');
-var detailScreen = document.getElementById('detailScreen');
-var detailContent = document.getElementById('detailContent');
-var detailText = document.getElementById('detailText');
-var closeButton = document.getElementById('closeButton');
-
 document.addEventListener('DOMContentLoaded', function() {
     const detailScreen = document.getElementById('detailScreen');
     const projectImages = document.getElementById('projectImages');
@@ -62,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             const img = document.createElement('img');
                             img.src = imageSrc;
                             img.alt = project.title;
-                            img.classList.add('info-image');
+                            img.classList.add('swiper-slide');
                             projectImages.appendChild(img);
                         });
 
@@ -76,13 +70,26 @@ document.addEventListener('DOMContentLoaded', function() {
                         projectAutoEval.textContent = project['auto-eval'];
 
                         detailScreen.style.transform = 'translateY(0)';
+
+                        // Initialiser Swiper
+                        new Swiper('.swiper-container', {
+                            loop: true,
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            },
+                        });
                     }
                 });
             });
         })
         .catch(error => console.error('Erreur lors du chargement des données JSON :', error));
 
-closeButton.addEventListener('click', function() {
-    detailScreen.style.transform = 'translateY(-100%)';
+    closeButton.addEventListener('click', function() {
+        detailScreen.style.transform = 'translateY(-100%)';
+    });
 });
-})
