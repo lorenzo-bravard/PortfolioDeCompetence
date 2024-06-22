@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B162C;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: white;
+    background-image: url('background.jpg');
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styles généraux pour la personnalisation */
+::-webkit-scrollbar {
+    width: 10px; /* Largeur de la scrollbar */
+}
+
+/* Track (fond de la scrollbar) */
+::-webkit-scrollbar-track {
+    background: #3B556D; /* Couleur de fond du track */
+}
+
+/* Handle (la partie mobile de la scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #5FC2BA; /* Couleur de la partie mobile */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Couleur de la partie mobile au survol */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10rem;
+    grid-row-gap: 10rem;
+    overflow-y: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.circle {
+    width: 15vw;
+    height: 15vw;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    box-shadow: rgba(221, 221, 221, 0.3) 0px 8px 18px -3px,
+    rgba(221, 221, 221, 0.2) 0px -3px 0px inset;
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #9819ec65;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.circle:hover::before {
+    transform: translateY(0);
+}
+
+.circle:hover {
+    /* transform: scale(1.1); */
+    transform: rotate(3deg) scale(1.2);
+}
+
+.circle .text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease, bottom 0.5s ease;
+}
+
+.circle:hover .text {
+    opacity: 1;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+.informations{
+    width: 50vw;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.6) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+    z-index: 10;
+    padding: 3rem;
+    background: rgba(16, 21, 61, 0.5);
+
+}
+#detailScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg');
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+    display: flex;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.detail-content {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    width: 100%;
+}   
+
+.info-item {
+    position: relative;
+    overflow: hidden;
+}
+
+#projectImages{
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+}
+.info-image {
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.info-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.info-item:hover .info-overlay {
+    opacity: 1;
+}
+
+/* .info-item:hover .info-image {
+    transform: scale(1.1);
+} */
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.div1 { grid-area: 2 / 2 / 3 / 3; background-image: url('https://picsum.photos/200/300'); }
+.div2 { grid-area: 2 / 3 / 3 / 4; background-image: url('https://picsum.photos/200/300');}
+.div3 { grid-area: 2 / 4 / 3 / 5; background-image: url('https://picsum.photos/200/300');}
+
+.custom-cursor {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none; /* Évite que le curseur interagisse avec les éléments de la page */
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
