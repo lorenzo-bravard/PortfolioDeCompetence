@@ -7,7 +7,6 @@
         "Situation": "",
         "tache": "",
         "action": "",
-        "resultat": "",
         "auto-eval": "",
         "images": [
             "https://picsum.photos/200/300",
@@ -22,7 +21,6 @@
         "Situation": "Objectif :  Faire un projet sur le théme de la musique, Idée : Quizz lier a la musique.",
         "tache": ["1.Créer le déroulement du quizz ","2.Chercher des bonnes idées de mini-jeux","3.Faire le maquettage","4.Créer les différents minis jeux"],
         "action": "",
-        "resultat": "",
         "auto-eval": "Le projet a été vraiment interessant à développer car nous avons tout pensé de A à Z. De plus, je trouve que le quizz est plutôt de qualité même si il manque plus de mini-jeux pour ne pas tomber tout sur la même chose.",
         "images": [
             "./img/GivUp-accueil.png",
@@ -41,7 +39,6 @@
         "Situation": "",
         "tache": "",
         "action": "",
-        "resultat": "",
         "auto-eval": "",
         "images": [
             "https://picsum.photos/200/300",

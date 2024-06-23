@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
                             const img = document.createElement('img');
                             img.src = imageSrc;
                             img.alt = project.title;
-                            img.classList.add('swiper-slide');
                             projectImages.appendChild(img);
                         });
 
@@ -71,18 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
                         detailScreen.style.transform = 'translateY(0)';
 
-                        // Initialiser Swiper
-                        new Swiper('.swiper-container', {
-                            loop: true,
-                            pagination: {
-                                el: '.swiper-pagination',
-                                clickable: true,
-                            },
-                            navigation: {
-                                nextEl: '.swiper-button-next',
-                                prevEl: '.swiper-button-prev',
-                            },
-                        });
                     }
                 });
             });
