@@ -3,41 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone</title>
+    <title>SkillFlix - Accueil</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
-    <header class="header">
-        <div class="logo">SkillFlix</div>
-    </header>
-    
-    <section style="background-image: url('./img/photo-wallpaper-tokyo-night-view_big01.jpg'); background-position: bottom;" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Liste des compétences</h1>
-            <p class="hero-description">Description brève des compétences</p>
-            <div style="display: flex;">
-                <button class="btn" onclick="showAC()"> ▶ Lecture des compétences</button>
-                <button style="margin-left: 1rem; display: flex; background-color: #7c7c7c;" class="btn" onclick="showAC()"><span style="border-radius: 100%; border: solid 1px white; width: 29px; display: block; height: 29px; margin-right: 1rem;">ℹ</span> En savoir plus</button>
-            </div>
-        </div>
-    </section>
-    
+    <div class="container">
+        <aside class="sidebar">
+            <div style="position: fixed;" class="logo">SpotySkill</div>
+            <nav>
+                <nav style="display: flex; justify-content: center;">
+                    <ul style="top:6rem; position: fixed;" class="nav-links">
+                        <li><a href="#"><i class="fas fa-home"></i> </a></li>
+                        <li><a href="#"><i class="fas fa-search"></i> </a></li>
+                        <li><a href="#"><i class="fas fa-record-vinyl"></i>  </a></li>
+                        <li><a href="#"><i class="fas fa-headphones"></i> </a></li>
+                        <li><a href="#"><i class="fas fa-microphone"></i> </a></li>
+                        <li><a href="#"><i class="fas fa-music"></i> </a></li>
+                    </ul>
+                </nav>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="header-content">
+                </div>
+            </header>
+
+            <section class="hero">
+                <img style="margin-left:3rem; width: 20vw;" src="./img/Vinyles-by-Eric-Krull-unsplash-e1678438074655.jpg" alt="">
+                <div class="hero-content">
+                    <h1 class="hero-title">Liste des compétences</h1>
+                    <p class="hero-description">Description brève des compétences</p>
+                    <div class="hero-buttons">
+                        <button class="btn" onclick="showAC()">Play</button>
+                        <button style="background-color: #282828; border: solid 1px white;" class="btn info-btn" onclick="showAC()">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Mes sons</h2>
+                <div class="row" id="popularSeriesRow">
+                    <!-- Les titres des séries seront injectés ici -->
+                </div>
+            </section>
+        </main>
+    </div>
+
     <div class="modal" id="acModal">
         <div class="modal-content">
             <h2>Activités Complémentaires</h2>
             <ul class="ac-list" id="acList"></ul>
-            <button style="margin-bottom: 2rem;" class="btn" onclick="closeModal()">Fermer</button>
+            <button class="btn" onclick="closeModal()">Fermer</button>
         </div>
     </div>
 
-    <section class="section">
-        <h2>Ma liste</h2>
-        <div class="row" id="popularSeriesRow">
-            <!-- Les titres des séries seront injectés ici -->
-        </div>
-    </section>
-    
     <script src="script.js"></script>
 </body>
 </html>

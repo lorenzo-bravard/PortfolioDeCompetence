@@ -6,50 +6,69 @@
     <title>Détails de la Série</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
-    <header class="header">
-        <div class="logo"><a style="text-decoration: none; color: unset;" href="index.html">SkillFlix</a></div>
-    </header>
-    
-    <section class="details-hero" id="detailsHero">
-        <div class="details-content">
-            <h1 id="detailsTitle"></h1>
-        </div>
-    </section>
+    <div class="container">
+        <aside class="sidebar">
+            <div style="position: fixed;" class="logo">SpotySkill</div>
+            <nav>
+                <nav style="display: flex; justify-content: center;">
+                    <ul style="top:6rem; position: fixed;" class="nav-links">
+                        <li><a href="#"><i class="fas fa-home"></i> </a></li>
+                        <li><a href="#"><i class="fas fa-search"></i> </a></li>
+                        <li><a href="#"><i class="fas fa-record-vinyl"></i>  </a></li>
+                        <li><a href="#"><i class="fas fa-headphones"></i> </a></li>
+                        <li><a href="#"><i class="fas fa-microphone"></i> </a></li>
+                        <li><a href="#"><i class="fas fa-music"></i> </a></li>
+                    </ul>
+                </nav>
+            </nav>
+        </aside>
 
-    <section class="ac-section">
-        <h2>Description</h2>
-        <p id="detailsDescription"></p>
-    </section>
+        <main class="main-content">
+            <header class="header">
+                <div class="header-content">
+                </div>
+            </header>
 
-    <section class="ac-section">
-        <h2>Apprentissages critiques</h2>
-        <ul class="ac-list" id="acList"></ul>
-    </section>
+            <section class="details-hero" id="detailsHero">
+                <div class="details-content">
+                    <h1 id="detailsTitle">Titre de la série</h1>
+                </div>
+            </section>
 
-    <section class="tasks-section">
-        <h2>Tâches</h2>
-        <ul class="tasks-list" id="tasksList"></ul>
-    </section>
+            <section class="ac-section">
+                <h2>Description</h2>
+                <p id="detailsDescription"></p>
+            </section>
+        
+            <section class="ac-section">
+                <h2>Apprentissages critiques</h2>
+                <ul class="ac-list" id="acList"></ul>
+            </section>
+        
+            <section class="tasks-section">
+                <h2>Tâches</h2>
+                <ul class="tasks-list" id="tasksList"></ul>
+            </section>
+        
+            <section class="auto-eval-section">
+                <h2>Auto-évaluation</h2>
+                <p id="autoEvalText"></p>
+            </section>
+        
+            <section class="images-section">
+                <h2>Images</h2>
+                <div class="images-row" id="imagesRow"></div>
+            </section>
 
-    <section class="auto-eval-section">
-        <h2>Auto-évaluation</h2>
-        <p id="autoEvalText"></p>
-    </section>
-
-    <section class="images-section">
-        <h2>Images</h2>
-        <div class="images-row" id="imagesRow"></div>
-    </section>
-
-    <div id="justificationModal" class="modalAC">
-        <div class="modalAC-content">
-            <span class="close">&times;</span>
-            <div id="divNumAc">
-            </div>
-            <h2>Justification</h2>
-            <p id="justificationText"></p>
+    <div class="modal" id="acModal">
+        <div class="modal-content">
+            <h2>Activités Complémentaires</h2>
+            <ul class="ac-list" id="modalAcList"></ul>
+            <button class="btn" onclick="closeModal()">Fermer</button>
         </div>
     </div>
 
