@@ -44,7 +44,7 @@
             {
                 "code": "AC34.01",
                 "description": "Développer à l’aide d’un framework de développement côté client",
-                "justification": "Pour ce projet, nous avons utilisé le framework 'React JS' qui agit côté client. React JS a été choisi pour sa flexibilité et son efficacité, notamment grâce aux composants réutilisables qui ont simplifié le développement et la maintenance du code. Par exemple, les différents mini-jeux partagent certains composants de base, ce qui a permis de réduire le temps de développement et de maintenir une cohérence visuelle."
+                "justification": "Pour le projet Giv'Up, nous avons utilisé le framework 'React JS' qui agit côté client. React JS a été choisi pour sa flexibilité et son efficacité, notamment grâce aux composants réutilisables qui ont simplifié le développement et la maintenance du code. Par exemple, les différents mini-jeux partagent certains composants de base, ce qui a permis de réduire le temps de développement et de maintenir une cohérence visuelle."
             },
             {
                 "code": "AC35.02",

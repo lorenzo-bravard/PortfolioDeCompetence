@@ -85,16 +85,18 @@ body {
     transform: scale(1.05);
     cursor: pointer;
 }
-
+.ac-list>li:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
 .modal {
     display: none;
     position: fixed;
     z-index: 10;
     left: 15%;
     top: 13%;
-    width: 100%;
     overflow: auto;
-    width: 70vw !important;
+    width: 88vw !important;
     background-color: #222;
     height: 80vh;
     border-radius: 22px;
