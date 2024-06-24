@@ -10,15 +10,27 @@
 <body>
     <header class="header">
         <div class="logo">SkillFlix</div>
+        <nav class="menu">
+            <ul style="list-style-type: none;">
+                <li><a class="no-style" href="#accueil"><i class="fas fa-home"> Accueil</a></li>
+                <li><a class="no-style" href="#rechercher"><i class="fa-solid fa-magnifying-glass"></i> Rechercher</a></li>
+                <li><a class="no-style" href="#bibliotheque"><i class="fa-solid fa-book"></i> Bibliothèque</a></li>
+                <li><a class="no-style" href="#creer"><i class="fa-solid fa-plus"></i> Créer une playlist</a></li>
+                <li><a class="no-style" href="#likes"><i class="fa-solid fa-heart"></i> Titres likés</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <section style="background-image: url('./img/photo-wallpaper-tokyo-night-view_big01.jpg'); background-position: bottom;" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Liste des compétences</h1>
-            <p class="hero-description">Description brève des compétences</p>
-            <div style="display: flex;">
-                <button class="btn" onclick="showAC()"> ▶ Lecture des compétences</button>
-                <button style="margin-left: 1rem; display: flex; background-color: #7c7c7c;" class="btn" onclick="showAC()"><span style="border-radius: 100%; border: solid 1px white; width: 29px; display: block; height: 29px; margin-right: 1rem;">ℹ</span> En savoir plus</button>
+<div id="section-container">
+    <section class="hero">
+        <div class="sous-container-hero">
+            <img style="width: 20vw; height: 20vw;" src="./img/album-cover-design-template-07f84184cff006c62e42b19daab6510a_screen.jpg" alt="">
+            <div class="hero-content">
+                <h1 class="hero-title">Liste des compétences</h1>
+                <p class="hero-description">Description brève des compétences</p>
+                <div style="display: flex;">
+                    <button class="btn" onclick="showAC()"> Play </button>
+                    <button style="margin-left: 1rem; display: flex; background-color: unset; border: solid 1px white;" class="btn" onclick="showAC()">S'abonner</button>
+                </div>
             </div>
         </div>
     </section>
@@ -47,7 +59,8 @@
             <p id="justificationText"></p>
         </div>
     </div>
-    
+
+</div>
     <script src="script.js"></script>
 </body>
 </html>

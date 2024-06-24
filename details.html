@@ -9,9 +9,18 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo"><a style="text-decoration: none; color: unset;" href="index.html">SkillFlix</a></div>
+        <div class="logo">SkillFlix</div>
+        <nav class="menu">
+            <ul style="list-style-type: none;">
+                <li><a class="no-style" href="#accueil"><i class="fas fa-home"> Accueil</a></li>
+                <li><a class="no-style" href="#rechercher"><i class="fa-solid fa-magnifying-glass"></i> Rechercher</a></li>
+                <li><a class="no-style" href="#bibliotheque"><i class="fa-solid fa-book"></i> Bibliothèque</a></li>
+                <li><a class="no-style" href="#creer"><i class="fa-solid fa-plus"></i> Créer une playlist</a></li>
+                <li><a class="no-style" href="#likes"><i class="fa-solid fa-heart"></i> Titres likés</a></li>
+            </ul>
+        </nav>
     </header>
-    
+<div id="section-container">
     <section class="details-hero" id="detailsHero">
         <div class="details-content">
             <h1 id="detailsTitle"></h1>
@@ -19,6 +28,10 @@
     </section>
 
     <section class="ac-section">
+        <div style="display: flex; flex-direction: row;">
+            <button class="btn" > Play </button>
+            <button style="margin-left: 1rem; display: flex; background-color: unset; border: solid 1px white;" class="btn">S'abonner</button>
+        </div>
         <h2>Description</h2>
         <p id="detailsDescription"></p>
     </section>
@@ -52,7 +65,7 @@
             <p id="justificationText"></p>
         </div>
     </div>
-
+</div>
     <script src="details.js"></script>
 </body>
 </html>

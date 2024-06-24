@@ -119,15 +119,27 @@ fetch('projects.json')
     
         jsonData.forEach(project => {
             const card = document.createElement('div');
-            
+            const img = document.createElement('img');
+            const content = document.createElement('div');
+        
             card.classList.add('card');
-            card.style.backgroundImage = `url(${project.images[0]})`;
-            card.innerHTML = `
-                <div class="card-title">${project.title}</div>  
+            content.classList.add('card-content');
+            img.classList.add('card-img');
+        
+            img.src = project.images[0];
+            img.alt = project.title;
+        
+            content.innerHTML = `
+                <div class="card-title">${project.title}</div>
             `;
+        
+            card.appendChild(img);
+            card.appendChild(content);
+        
             card.addEventListener('click', () => {
                 window.location.href = `details.html?id=${project.id}`;
             });
+        
             popularSeriesRow.appendChild(card);
         });
     }   

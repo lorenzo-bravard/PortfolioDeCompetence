@@ -5,23 +5,39 @@ body {
     background-color: #141414;
     color: #fff;
     font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 0.05fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     padding: 10px 20px;
     background-color: #111;
-    position: fixed;
-    width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 3;
+    grid-area: 1 / 1 / 2 / 2;
+}
+#section-container{
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.menu>ul>li{
+    margin-top: 4rem !important;
+
+}
+.no-style{
+    text-decoration: none;
+    color: white;
 }
 
 .logo {
     font-size: 2rem;
     font-weight: bold;
-    color: #e50914;
+    color: #1ed760;
 }
 
 .nav-links {
@@ -32,7 +48,9 @@ body {
 }
 
 .nav-links li {
-    margin: 0 10px;
+    margin: 0;
+    margin-top: 2rem;
+
 }
 
 .nav-links a {
@@ -43,10 +61,16 @@ body {
 .hero {
     display: flex;
     justify-content: flex-start;
-    height: 92vh;
-    background: url('https://picsum.photos/1200/800') no-repeat center center/cover;
+    height: 50vh;
+    background-color: #333;
     margin-top: 60px;
     align-items: center;
+}
+.sous-container-hero{
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
 }
 
 .hero-content {
@@ -68,7 +92,7 @@ body {
 
 .btn {
     padding: 10px 20px;
-    background-color: #e50914;
+    background-color: #1ed760;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -116,17 +140,31 @@ body {
 
 .card {
     display: flex;
-    background-color: #333;
-    border-radius: 5px;
-    overflow: hidden;
-    width: calc(25% - 10px);
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: transform 0.3s;
-    height: 23vh;
-    justify-content: center;
     align-items: center;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    background-color: #333;
+    width: 20vw;
+    border-radius: 3px
 }
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+.card-content {
+    flex: 1;
+}
+
+Explication
 
 .card img {
     width: 100%;
@@ -135,8 +173,8 @@ body {
 
 .card-title {
     padding: 10px;
-    font-size: 42px;
-    font-weight: bolder;
+    font-size: 22px;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -161,9 +199,8 @@ body {
 .details-hero {
     background-position: top !important;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
+    align-items: flex-end;
+    height: 33vh;
     background-size: cover;
     background-position: center;
     margin-top: 60px;
@@ -181,7 +218,7 @@ body {
 }
 
 .details-content h1 {
-    font-size: 10rem;
+    font-size: 4rem;
     margin-bottom: 10px;
 }
 
@@ -253,7 +290,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(93, 93, 209);
+    background-color: #1ed760;
     color: white;
     border-radius: 5px;
     width: 10vw;
@@ -303,4 +340,10 @@ body {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+#left-menu{
+    width: 240px;
+    height: 100%;
+    background-color: #000;
 }
