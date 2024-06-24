@@ -1,58 +1,67 @@
 [
     {
         "id": 1,
-        "title": "Stage",
-        "description": "Une superbe application android, Animiru est l'application révé pour tout fan d'animé ! Cette aplication permet de retrouvé à quel épisode nous nous sommes arreté dans notre visionnage !",
+        "title": "DLM Soft",
+        "description": "Créée en 2005 par trois associés, Pierre Duranton, Alain Lahaeye et Gilles Marceau, son nom vient de ceux des trois fondateurs. L’heureux hasard est que DLM est également la contraction de Développement Logiciel Métier. D’abord société de services, DLM Soft est depuis 2018 (après leur rachat par TeamNet) éditeur de logiciels. Ils sont spécialisés dans le domaine de l’eau et de l’assainissement. L’entreprise Enedis a commandé une application de gestion de fouille (trou) que nous appellerons “ouverture” ou “fermeture” selon l’étape. Cette application servira de gestion des ouvertures et fermetures. Si cette application remporte un franc succès, l’application pourrait être absorbé par Enedis qui pourra le redévelopper en interne afin de la diffuser plus largement. Lolea est destiné aux exploitants de stations d’épuration ou de réseaux de canalisation soumis à des obligations réglementaires strictes en matière d’autosurveillance. Elle est utile pour établir un programme annuel, transmettre des données Sandre et produire des bilans annuels.",
         "AC": [
             {
                 "code": "AC34.04",
                 "description": "Concevoir et développer des composants logiciels, plugins ou extensions",
-                "justification": "J'ai utilisé Blazor durant mon stage, ce framework permet d'utiliser des composants. L'entreprise avait un projet interne 'Common-Blazor' ausuel j'ai participé. J'ai donc eu l'occasion de développer des composant dans ce cadre là"
+                "justification": "Les applications développées par l'entreprise sont en Blazor, il est donc nécessaire de créer des composants. Je suis intervenu dans la modification du composant image de l'entreprise. J'ai également travaillé sur plusieurs autres composants, comme le composant des icônes."
             },
             {
                 "code": "AC34.01",
                 "description": "Développer à l’aide d’un framework de développement côté serveur",
-                "justification": "Lors de mon stage, j'ai eu l'occasion d'utiliser Blazor qui est un FrameWork développé par Microsoft qui peut aussi bien être de coté client ou serveur"
+                "justification": "Lors de mon stage, j'ai eu l'occasion d'utiliser Blazor, un framework côté serveur fonctionnant en C#. Blazor permet le développement web sans utiliser de JavaScript ou de PHP."
             }
         ],
         "Situation": "",
-        "tache": "",
-        "action": "",
-        "auto-eval": "",
+        "tache": ["1. Création à partir de zéro de l'application Enedis.","2. Modification de l'application Lolea.","3. Maintenance des composants de l'entreprise."],
+        "action": "J'ai développé de nombreuses pages pour l'application Enedis, que ce soit pour la partie mobile ou desktop. J'ai également énormément modifié le CSS de l'application Lolea, en m'occupant principalement du responsive.",
+        "auto-eval": "Lors de ce stage, j'ai énormément appris. Je suis désormais bien plus à l'aise en back-end et en front-end. Je ressens le avant et après de ce stage. Mon travail est désormais de bien meilleure qualité.",
         "images": [
-            "./img/Animation - Copie (2).gif"
+            "./img/dlm.png",
+            "./img/Animation - Copie (2).gif",
+            "./img/enedis.png",
+            "./img/falcon.png",
+            "./img/falcon2.png",
+            "./img/loleav1.png",
+            "./img/loleav2.png",
+            "./img/common.png",
+            "./img/enedis2.png"
         ]
     },
     {
         "id": 2,
         "title": "Giv'Up !",
-        "description": "Une application web de quizz se jouant de 2 à 4 joueurs. Le jeu se déroule en tour par tour. Le premier joueur commence avec un mini-jeu aléatoire. Il y a 4 mini-jeux différents : Un puzzle, une timeline, Un jeu où il faut associer la pochette à l'artiste correspondant. Ces trois premiers mini-jeux se jouent en solo. Le quatrième mini-jeu se joue avec tous les participants. Le but est de retrouver la musique après que les paroles aient été traduites en anglais (si elles sont en français) ou en français (si elles sont dans une autre langue). Pour répondre, il faut buzzer en utilisant les touches du clavier. A la fin la personne qui a marque le plus de point gagne",
+        "description": "Pour ce projet, nous avons dû réfléchir à tout : définir le thème, puis trouver une idée intéressante d'application à créer pour une borne interactive. Nous avons donc décidé de faire un quiz pouvant être joué par 2 à 4 joueurs. Le jeu se déroule en tour par tour : le premier joueur commence avec un mini-jeu aléatoire parmi quatre différents. Ces mini-jeux sont un puzzle, une frise chronologique, un jeu où il faut associer la pochette à l'artiste correspondant. Les trois premiers mini-jeux se jouent en solo. Le quatrième mini-jeu se joue avec tous les participants. À la fin, la personne qui a marqué le plus de points gagne.",
         "AC": [
             {
                 "code": "AC34.02",
                 "description": "Développer des dispositifs interactifs sophistiqués",
-                "justification": "Afin de rendre nos jeux intérrésant et amusant, il était absolument nécessaire d'ajouter de l'interactiviter. Nos joueurs peuvent déplacer des éléments sur l'écran ou même utiliser des buzzers"
+                "justification": "Afin de rendre nos jeux interactifs, nous avons créé des éléments tels que des buzzers ou même des éléments qui peuvent se déplacer sur l'écran. Par exemple, dans le mini-jeu 'Puzzle', les utilisateurs peuvent faire glisser les pièces du puzzle sur l'écran pour les placer correctement, ce qui crée une expérience plus immersive et engageante."
             },
             {
                 "code": "AC34.01",
                 "description": "Développer à l’aide d’un framework de développement côté client",
-                "justification": "Pour ce projet nous avons utilisé le framework 'React JS' qui est agis coté client."
+                "justification": "Pour ce projet, nous avons utilisé le framework 'React JS' qui agit côté client. React JS a été choisi pour sa flexibilité et son efficacité, notamment grâce aux composants réutilisables qui ont simplifié le développement et la maintenance du code. Par exemple, les différents mini-jeux partagent certains composants de base, ce qui a permis de réduire le temps de développement et de maintenir une cohérence visuelle."
             },
             {
                 "code": "AC35.02",
                 "description": "Maîtriser la qualité en projet Web ou multimédia",
-                "justification": "Afin de réaliser la meilleur des applications nous avons procéder à des tests. Ces tests ont été réaliser par l'ensemble de la classe. Notre but était de trouver les bugs que pouvais avoir l'application ou des problèmes d'ergonomie"
+                "justification": "Afin de réaliser la meilleure des applications, nous avons procédé à des tests. Ces tests ont été réalisés par l'ensemble de la classe. Notre but était de trouver les bugs que pouvait avoir l'application ou des problèmes d'ergonomie. Par exemple, avec le jeu 'puzzle', nous avons modifié son fonctionnement pour passer d'un système de clic à un système de glisser-déposer (drag and drop)."
             }
         ],
-        "Situation": "Objectif :  Faire un projet sur le théme de la musique, Idée : Quizz lier a la musique.",
+        "Situation": "Objectif : Faire un projet sur le thème de la musique. Idée : Quiz lié à la musique.",
         "tache": [
-            "1.Créer le déroulement du quizz ",
-            "2.Chercher des bonnes idées de mini-jeux",
-            "3.Faire le maquettage",
-            "4.Créer les différents minis jeux"
+            "1. Créer le déroulement du quiz",
+            "2. Chercher de bonnes idées de mini-jeux",
+            "3. Faire le maquettage",
+            "4. Créer les différents mini-jeux"
         ],
-        "action": "",
-        "auto-eval": "Le projet a été vraiment interessant à développer car nous avons tout pensé de A à Z. De plus, je trouve que le quizz est plutôt de qualité même si il manque plus de mini-jeux pour ne pas tomber tout sur la même chose.",
+        "action": "Je me suis donc occupé du bon déroulement du jeu ainsi que du maquettage et de la conception de deux mini-jeux. Le premier était le mini-jeu 'Timeline'. Le but était de remettre dans le bon ordre sur une frise chronologique des couvertures d'album, de la plus ancienne à la plus récente, dans un temps imparti. Le deuxième mini-jeu que j'ai conçu de A à Z était le jeu final. Le but de ce dernier était de retrouver la musique après que les paroles avaient été traduites en anglais (si elles étaient en français) ou en français (si elles étaient dans une autre langue). Pour répondre, il fallait buzzer en utilisant les touches mises à disposition sur la borne. J'ai également aidé mes camarades sur les autres mini-jeux, comme par exemple la fonctionnalité de glisser-déposer pour le mini-jeu 'Puzzle'. Cependant, ce n'est pas moi qui ai imaginé le concept des autres mini-jeux.",
+        "auto-eval": "Le projet a été vraiment intéressant à développer, car nous avons tout pensé de A à Z. Nous avons pris en compte chaque aspect, du maquettage à la réalisation finale, ce qui nous a permis de comprendre et de contrôler chaque étape du processus de développement. De plus, je trouve que le quiz est de bonne qualité grâce à l'attention portée aux détails et à l'interactivité. Cependant, je pense qu'il aurait pu être encore meilleur si nous avions intégré un plus grand nombre de mini-jeux. Cela aurait aidé à éviter la répétition. Malgré cette limitation, je suis fier de ce que nous avons accompli et des compétences que nous avons développées tout au long de ce projet.",
+
         "images": [
             "./img/GivUp-accueil.png",
             "./img/GivUp-settings.png",
@@ -64,27 +73,71 @@
     },
     {
         "id": 3,
-        "title": "Entrepreunariat",
-        "description": "  ",
+        "title": "Entrepreneuriat",
+        "description": "Le but de ce projet était de simuler la gestion en équipe de différentes parties d'une entreprise. Nous avons tous endossé le rôle de chef de projet, devant superviser des employés et définir les tâches prioritaires à développer en premier.",
         "AC": [
-            {
-                "code": "AC35.03",
-                "description": "Concevoir un projet d’entreprise innovante en définissant le nom",
-                "justification": "Nous avons créé une startup avec un modèle d'affaires unique qui répond à un besoin spécifique du marché."
-            },
             {
                 "code": "AC35.01",
                 "description": "Piloter un produit, un service ou une équipe",
-                "justification": "Ce projet était axé sur la gestion de projet. Nous devions gérer nos équipes ainsi que respecter des deadlines."
+                "justification": "Ce projet était axé sur la gestion de projet. Nous devions gérer nos équipes, attribuer des tâches et respecter des délais stricts. Cela nous a permis de développer nos compétences en communication et en organisation."
             }
         ],
         "Situation": "",
-        "tache": "",
-        "action": "",
-        "auto-eval": "",
+        "tache": ["Chaque membre de l'équipe devait terminer dans les temps toutes les tâches assignées pour compléter le produit final et le livrer dans les délais. Chaque jour de retard nous coûtait de l'argent. Il fallait également gérer les heures supplémentaires des employés ainsi que leurs éventuels retards ou absences."],
+        "action": "En tant que chef de projet, j'ai coordonné les efforts de l'équipe en attribuant les tâches en fonction du temps donné pour chaque tâche, en tenant compte des compétences spécifiques de chaque employé. Pour gérer les ressources humaines, j'ai surveillé les heures supplémentaires et les absences des employés, ajustant les plannings en conséquence pour minimiser les impacts sur le projet.",
+        "auto-eval": "Ce projet m'a permis de développer des compétences cruciales en gestion de projet, notamment en planification et organisation. Bien que nous n'ayons pas pu rendre le projet dans les temps, de mon côté j'ai réussi à terminer toutes mes tâches en avance.",
         "images": [
-            "https://picsum.photos/200/300",
-            "https://picsum.photos/200/300"
+            "./img/tableau.png"
+        ]
+    },
+
+    {
+        "id": 4,
+        "title": "Brasserie Les 3 Petits",
+        "description": "Nous avons été mandatés par un client pour créer un site web, une application mobile, un clip vidéo, et organiser l'inauguration de l'ouverture de sa brasserie-restaurant. En concurrence avec d'autres équipes, notre objectif était de convaincre ce client potentiel de choisir notre entreprise.",
+        "AC": [
+            {
+                "code": "AC35.03",
+                "description": "Concevoir un projet d’entreprise innovante en définnissant le nom, l’identité, la forme juridique et le ton de la marque ",
+                "justification": "Nous avons créé l'identité d'une brasserie ainsi que son plan de communication. Nous avons également réfléchi aux manières de fidéliser les clients le plus efficacement possible en proposant des réductions à la réservation."
+            },
+            {
+                "code": "AC35.04",
+                "description": "Défendre un projet de manière convaincante",
+                "justification": "À l'issue de ce projet, nous avons réalisé une soutenance devant l'entièreté de la promotion. À ce moment-là, ce n'étaient plus des camarades de classe mais des clients que l'on devait convaincre."
+            }
+        ],
+        "Situation": "Nous faisions partie d'une équipe en concurrence avec d'autres, avec pour objectif de convaincre un client potentiel de choisir notre entreprise plutôt que nos concurrents. Nous avions une semaine pour préparer un projet convaincant à présenter au commanditaire.",
+        "tache": ["Présenter une maquette de site web et d'application mobile", "des affiches", "des cartes de vistes", "un scénario de clip et les détails sur l'inauguration de la brasserie."],
+        "action": "En tant que chef de projet, j'ai réparti les rôles de chaque membre de l'équipe. Une personne s'est occupée du scénario du clip vidéo, une autre de la communication de la brasserie. Je me suis personnellement chargé de la maquette avec un de mes collègues. J'ai également décidé de sous-traiter le clip car aucun membre de l'équipe n'avait de compétences en audiovisuel. De plus, afin de promouvoir le site web de la brasserie pour l'ouverture, nous avons proposé des réductions pour les personnes réservant une table sur le site.",
+        "auto-eval": "Dans le cadre de ce projet, j'ai démontré ma capacité à gérer efficacement une équipe et à répartir les tâches en fonction des compétences de chacun. La décision de sous-traiter le clip vidéo a montré ma capacité à identifier les lacunes dans notre expertise et à prendre des mesures pour y remédier. De plus, la mise en place d'un système de points de fidélité a non seulement ajouté de la valeur au projet, mais a également montré notre compréhension des stratégies de marketing efficaces. Malgré la pression et les délais serrés, nous avons réussi à présenter un projet complet et cohérent, ce qui témoigne de notre capacité à travailler efficacement sous contrainte.",
+        "images": [
+            "./img/Flyer.png",
+            "./img/Site_web.png"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Gestionnaire de mot de passe Laravel",
+        "description": "Dans ce projet, le but était simple : créer un gestionnaire de mots de passe avec la possibilité de créer des équipes ayant les droits de voir certains mots de passe.",
+        "AC": [
+            {
+                "code": "AC34.05",
+                "description": "Concevoir l’hébergement et le déploiement d’applications",
+                "justification": "Pendant ce projet, nous avons hébergé notre gestionnaire de mots de passe. Nous avons appris à héberger un site web de manière professionnelle, en suivant les bonnes pratiques du milieu."
+            }
+        ],
+        "Situation": "Le choix du projet a été décidé par l'ensemble de la classe. Il était l'un des plus importants de l'année, car à travers ce projet nous avons découvert Laravel.",
+        "tache": [
+            "1.Création de compte",
+            "2.Création de formulaire pour insérer un mot de passe en controlant les données envoyé",
+            "3.Création d'une équipe"
+        ],
+    
+        "auto-eval": "Ce projet m'a permis de développer des compétences sur le framework php Laravel et en hébergement",
+        "images": [
+            "./img/connexion.png",
+            "./img/laravel-mark-red-type-black_w1280.png"
         ]
     }
 ]
