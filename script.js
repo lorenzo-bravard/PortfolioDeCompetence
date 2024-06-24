@@ -149,6 +149,9 @@ function showAC() {
             li.innerHTML = `${ac.description} <span class="validate-icon">✔️</span>`;
             li.insertBefore(acNumber, li.firstChild);
             acList.appendChild(li);
+            li.addEventListener('click', () => {            
+                showModal(ac);
+            });
         });
     });
 
@@ -157,4 +160,40 @@ function showAC() {
 
 function closeModal() {
     document.getElementById('acModal').style.display = 'none';
+}
+
+function showModal(ac, index) {
+    const modal = document.getElementById('justificationModal');
+    const modalText = document.getElementById('justificationText');
+    const divNumAc = document.getElementById('divNumAc');
+    divNumAc.innerHTML = ''; // Clear previous AC items
+
+    // Create the blue rectangle element with the first 9 characters of AC text
+    const acNumber = document.createElement('div');
+    acNumber.classList.add('ac-number');
+    const acNumberText = document.createElement('h3');
+    acNumberText.textContent = ac.code; // Get the first 9 characters
+    acNumber.appendChild(acNumberText);
+    divNumAc.appendChild(acNumber);
+
+    modalText.textContent = ac.justification;
+    modal.style.display = "block";
+
+    // Get the <span> element that closes the modal
+    const span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = () => {
+        modal.style.display = "none";
+        modalText.textContent = ""; // Clear the content when modal is closed
+        }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = (event) => {
+        if (event.target == modal) {
+            
+            modal.style.display = "none";
+            modalText.textContent = ""; // Clear the content when modal is closed
+        }
+    }
 }
