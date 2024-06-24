@@ -32,6 +32,7 @@ body {
 .no-style{
     text-decoration: none;
     color: white;
+    display: flex;
 }
 
 .logo {
@@ -212,19 +213,30 @@ Explication
     padding: 20px;
 }
 .details-content {
+    display: flex;
     text-align: center;
     padding: 20px;
+    justify-content: left;
     border-radius: 5px;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .details-content h1 {
     font-size: 4rem;
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0px;
 }
 
+.icone-left-menu{
+    width: 2vw;
+    height: 2vw;
+    filter: invert();
+    margin-right: 1rem;
+}
 .details-content p {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 /* Images Section */
