@@ -75,11 +75,8 @@ function displayProjectDetails(project) {
     } else {
         tasksList.textContent = "Aucune tâche disponible.";
     }
-    const action = document.getElementsByClassName('action');
-    action.textContent = project["action"]
-    if (action.textContent == "") {
-        action.style.display == "none";
-    }
+    const action = document.getElementById('action');
+    action.textContent = project["action"] || "Aucune auto-évaluation disponible.";
 
     const autoEvalText = document.getElementById('autoEvalText');
     autoEvalText.textContent = project["auto-eval"] || "Aucune auto-évaluation disponible.";
