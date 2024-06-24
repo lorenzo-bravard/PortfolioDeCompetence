@@ -76,7 +76,7 @@ function displayProjectDetails(project) {
         tasksList.textContent = "Aucune tâche disponible.";
     }
     const action = document.getElementById('action');
-    action.textContent = project["action"] || "Aucune auto-évaluation disponible.";
+    action.textContent = project["action"] || "";
 
     const autoEvalText = document.getElementById('autoEvalText');
     autoEvalText.textContent = project["auto-eval"] || "Aucune auto-évaluation disponible.";
