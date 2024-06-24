@@ -5,24 +5,14 @@
         "description": "Une superbe application android, Animiru est l'application révé pour tout fan d'animé ! Cette aplication permet de retrouvé à quel épisode nous nous sommes arreté dans notre visionnage !",
         "AC": [
             {
-                "code": "AC34.02",
-                "description": "Développer des dispositifs interactifs sophistiqués",
-                "justification": "Nous avons implémenté des fonctionnalités interactives avancées qui améliorent l'expérience utilisateur."
-            },
-            {
-                "code": "AC35.04",
-                "description": "Défendre un projet de manière convaincante",
-                "justification": "Nous avons préparé une présentation détaillée et convaincante qui a persuadé les parties prenantes."
-            },
-            {
                 "code": "AC34.04",
                 "description": "Concevoir et développer des composants logiciels, plugins ou extensions",
-                "justification": "Nous avons créé plusieurs plugins personnalisés qui étendent les fonctionnalités de l'application."
+                "justification": "J'ai utilisé Blazor durant mon stage, ce framework permet d'utiliser des composants. L'entreprise avait un projet interne 'Common-Blazor' ausuel j'ai participé. J'ai donc eu l'occasion de développer des composant dans ce cadre là"
             },
             {
-                "code": "AC34.05",
-                "description": "Maîtriser l'hébergement et le déploiement d'applications",
-                "justification": "Nous avons configuré et déployé l'application sur plusieurs plateformes d'hébergement avec succès."
+                "code": "AC34.01",
+                "description": "Développer à l’aide d’un framework de développement côté serveur",
+                "justification": "Lors de mon stage, j'ai eu l'occasion d'utiliser Blazor qui est un FrameWork développé par Microsoft qui peut aussi bien être de coté client ou serveur"
             }
         ],
         "Situation": "",
@@ -30,29 +20,28 @@
         "action": "",
         "auto-eval": "",
         "images": [
-            "https://picsum.photos/200/300",
-            "https://picsum.photos/200/300"
+            "./img/Animation - Copie (2).gif"
         ]
     },
     {
         "id": 2,
         "title": "Giv'Up !",
-        "description": "Une application web de quiz se joue de 2 à 4 joueurs. Le jeu se déroule en tour par tour, où le premier joueur commence avec un mini-jeu aléatoire. Il y a 4 mini-jeux différents :Un puzzle, Un jeu où il faut classer les pochettes d'album du plus ancien au plus récent, Un jeu où il faut associer la pochette à l'artiste correspondant, Ces trois premiers mini-jeux se jouent en solo. Le quatrième mini-jeu se joue avec tous les participants. Le but est de retrouver la musique après que les paroles aient été traduites en anglais (si elles sont en français) ou en français (si elles sont dans une autre langue). Pour répondre, il faut buzzer en utilisant les touches du clavier. A la fin la personne qui a marque le plus de point gagne",
+        "description": "Une application web de quizz se jouant de 2 à 4 joueurs. Le jeu se déroule en tour par tour. Le premier joueur commence avec un mini-jeu aléatoire. Il y a 4 mini-jeux différents : Un puzzle, une timeline, Un jeu où il faut associer la pochette à l'artiste correspondant. Ces trois premiers mini-jeux se jouent en solo. Le quatrième mini-jeu se joue avec tous les participants. Le but est de retrouver la musique après que les paroles aient été traduites en anglais (si elles sont en français) ou en français (si elles sont dans une autre langue). Pour répondre, il faut buzzer en utilisant les touches du clavier. A la fin la personne qui a marque le plus de point gagne",
         "AC": [
             {
                 "code": "AC34.02",
                 "description": "Développer des dispositifs interactifs sophistiqués",
-                "justification": "Nous avons intégré des mécanismes de jeu interactifs qui rendent l'expérience utilisateur plus engageante."
+                "justification": "Afin de rendre nos jeux intérrésant et amusant, il était absolument nécessaire d'ajouter de l'interactiviter. Nos joueurs peuvent déplacer des éléments sur l'écran ou même utiliser des buzzers"
             },
             {
                 "code": "AC34.01",
                 "description": "Développer à l’aide d’un framework de développement côté client",
-                "justification": "Nous avons utilisé un framework moderne qui nous a permis de développer rapidement et efficacement."
+                "justification": "Pour ce projet nous avons utilisé le framework 'React JS' qui est agis coté client."
             },
             {
                 "code": "AC35.02",
                 "description": "Maîtriser la qualité en projet Web ou multimédia",
-                "justification": "Nous avons suivi des normes strictes de qualité tout au long du développement pour assurer la fiabilité et la robustesse du produit."
+                "justification": "Afin de réaliser la meilleur des applications nous avons procéder à des tests. Ces tests ont été réaliser par l'ensemble de la classe. Notre but était de trouver les bugs que pouvais avoir l'application ou des problèmes d'ergonomie"
             }
         ],
         "Situation": "Objectif :  Faire un projet sur le théme de la musique, Idée : Quizz lier a la musique.",
@@ -79,11 +68,6 @@
         "description": "  ",
         "AC": [
             {
-                "code": "AC35.02",
-                "description": "Maîtriser la qualité en projet Web ou multimédia",
-                "justification": "Nous avons conçu un site Web innovant qui répond aux exigences élevées de qualité et de performance."
-            },
-            {
                 "code": "AC35.03",
                 "description": "Concevoir un projet d’entreprise innovante en définissant le nom",
                 "justification": "Nous avons créé une startup avec un modèle d'affaires unique qui répond à un besoin spécifique du marché."
@@ -91,7 +75,7 @@
             {
                 "code": "AC35.01",
                 "description": "Piloter un produit, un service ou une équipe",
-                "justification": "Nous avons dirigé une équipe dynamique pour développer et lancer notre produit avec succès sur le marché."
+                "justification": "Ce projet était axé sur la gestion de projet. Nous devions gérer nos équipes ainsi que respecter des deadlines."
             }
         ],
         "Situation": "",
