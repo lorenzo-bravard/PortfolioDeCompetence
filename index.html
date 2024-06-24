@@ -1,48 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
-    <div class="container">
-        <div class="circle div1" data-project-id="1">
-            <span class="text">Stage</span>
+    <header class="header">
+        <div class="logo">SkillFlix</div>
+    </header>
+    
+    <section style="background-image: url('./img/photo-wallpaper-tokyo-night-view_big01.jpg'); background-position: bottom;" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Liste des compétences</h1>
+            <p class="hero-description">Description brève des compétences</p>
+            <div style="display: flex;">
+                <button class="btn" onclick="showAC()"> ▶ Lecture des compétences</button>
+                <button style="margin-left: 1rem; display: flex; background-color: #7c7c7c;" class="btn" onclick="showAC()"><span style="border-radius: 100%; border: solid 1px white; width: 29px; display: block; height: 29px; margin-right: 1rem;">ℹ</span> En savoir plus</button>
+            </div>
         </div>
-
-        <div class="circle div2" data-project-id="2">
-            <span class="text">Projet Giv'Up</span>
-        </div>
-
-        <div class="circle div3" data-project-id="3">
-            <span class="text">Cesim Project</span>
-        </div>
-    </div>
-
-    <div class="custom-cursor"></div>
-    <div id="detailScreen">
-        <div class="swiper-container">
-            <div class="swiper-wrapper" id="projectImages"></div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-        <div class="informations">        
-            <h2 id="projectTitle"></h2>
-            <p id="projectDescription"></p>
-            <p id="projectAC"></p>
-            <p id="projectSituation"></p>
-            <p id="projectTache"></p>
-            <p id="projectAction"></p>
-            <p id="projectResultat"></p>
-            <p id="projectAutoEval"></p>
-            <button id="closeButton">Fermer</button>
+    </section>
+    
+    <div class="modal" id="acModal">
+        <div class="modal-content">
+            <h2>Activités Complémentaires</h2>
+            <ul class="ac-list" id="acList"></ul>
+            <button style="margin-bottom: 2rem;" class="btn" onclick="closeModal()">Fermer</button>
         </div>
     </div>
 
+    <section class="section">
+        <h2>Ma liste</h2>
+        <div class="row" id="popularSeriesRow">
+            <!-- Les titres des séries seront injectés ici -->
+        </div>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>

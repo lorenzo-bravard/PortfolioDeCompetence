@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de la Série</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a style="text-decoration: none; color: unset;" href="index.html">SkillFlix</a></div>
+    </header>
+    
+    <section class="details-hero" id="detailsHero">
+        <div class="details-content">
+            <h1 id="detailsTitle"></h1>
+        </div>
+    </section>
+
+    <section class="ac-section">
+        <h2>Description</h2>
+        <p id="detailsDescription"></p>
+    </section>
+
+    <section class="ac-section">
+        <h2>Apprentissages critiques</h2>
+        <ul class="ac-list" id="acList"></ul>
+    </section>
+
+    <section class="tasks-section">
+        <h2>Tâches</h2>
+        <ul class="tasks-list" id="tasksList"></ul>
+    </section>
+
+    <section class="auto-eval-section">
+        <h2>Auto-évaluation</h2>
+        <p id="autoEvalText"></p>
+    </section>
+
+    <section class="images-section">
+        <h2>Images</h2>
+        <div class="images-row" id="imagesRow"></div>
+    </section>
+
+    <div id="justificationModal" class="modalAC">
+        <div class="modalAC-content">
+            <span class="close">&times;</span>
+            <div id="divNumAc">
+            </div>
+            <h2>Justification</h2>
+            <p id="justificationText"></p>
+        </div>
+    </div>
+
+    <script src="details.js"></script>
+</body>
+</html>

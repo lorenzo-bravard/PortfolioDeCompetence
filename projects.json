@@ -3,7 +3,28 @@
         "id": 1,
         "title": "Stage",
         "description": "Une superbe application android, Animiru est l'application révé pour tout fan d'animé ! Cette aplication permet de retrouvé à quel épisode nous nous sommes arreté dans notre visionnage !",
-        "A.C": ["AC34.02 | Développer des dispositifs interactifs sophistiqués", "AC35.04 | Défendre un projet de manière convaincante", "AC34.04 | Concevoir et développer des composants logiciels, plugins ou extensions", "AC34.O5 | Maitriser l'hébergement et le déploiement d'applications"],
+        "AC": [
+            {
+                "code": "AC34.02",
+                "description": "Développer des dispositifs interactifs sophistiqués",
+                "justification": "Nous avons implémenté des fonctionnalités interactives avancées qui améliorent l'expérience utilisateur."
+            },
+            {
+                "code": "AC35.04",
+                "description": "Défendre un projet de manière convaincante",
+                "justification": "Nous avons préparé une présentation détaillée et convaincante qui a persuadé les parties prenantes."
+            },
+            {
+                "code": "AC34.04",
+                "description": "Concevoir et développer des composants logiciels, plugins ou extensions",
+                "justification": "Nous avons créé plusieurs plugins personnalisés qui étendent les fonctionnalités de l'application."
+            },
+            {
+                "code": "AC34.05",
+                "description": "Maîtriser l'hébergement et le déploiement d'applications",
+                "justification": "Nous avons configuré et déployé l'application sur plusieurs plateformes d'hébergement avec succès."
+            }
+        ],
         "Situation": "",
         "tache": "",
         "action": "",
@@ -17,9 +38,30 @@
         "id": 2,
         "title": "Giv'Up !",
         "description": "Une application web de quiz se joue de 2 à 4 joueurs. Le jeu se déroule en tour par tour, où le premier joueur commence avec un mini-jeu aléatoire. Il y a 4 mini-jeux différents :Un puzzle, Un jeu où il faut classer les pochettes d'album du plus ancien au plus récent, Un jeu où il faut associer la pochette à l'artiste correspondant, Ces trois premiers mini-jeux se jouent en solo. Le quatrième mini-jeu se joue avec tous les participants. Le but est de retrouver la musique après que les paroles aient été traduites en anglais (si elles sont en français) ou en français (si elles sont dans une autre langue). Pour répondre, il faut buzzer en utilisant les touches du clavier. A la fin la personne qui a marque le plus de point gagne",
-        "A.C": ["AC34.02 | Développer des dispositifs interactifs sophistiqués", "AC34.01 | Développer à l’aide d’un framework de développement côté client", "AC35.02 | Maîtriser la qualité en projet Web ou multimédia"],
+        "AC": [
+            {
+                "code": "AC34.02",
+                "description": "Développer des dispositifs interactifs sophistiqués",
+                "justification": "Nous avons intégré des mécanismes de jeu interactifs qui rendent l'expérience utilisateur plus engageante."
+            },
+            {
+                "code": "AC34.01",
+                "description": "Développer à l’aide d’un framework de développement côté client",
+                "justification": "Nous avons utilisé un framework moderne qui nous a permis de développer rapidement et efficacement."
+            },
+            {
+                "code": "AC35.02",
+                "description": "Maîtriser la qualité en projet Web ou multimédia",
+                "justification": "Nous avons suivi des normes strictes de qualité tout au long du développement pour assurer la fiabilité et la robustesse du produit."
+            }
+        ],
         "Situation": "Objectif :  Faire un projet sur le théme de la musique, Idée : Quizz lier a la musique.",
-        "tache": ["1.Créer le déroulement du quizz ","2.Chercher des bonnes idées de mini-jeux","3.Faire le maquettage","4.Créer les différents minis jeux"],
+        "tache": [
+            "1.Créer le déroulement du quizz ",
+            "2.Chercher des bonnes idées de mini-jeux",
+            "3.Faire le maquettage",
+            "4.Créer les différents minis jeux"
+        ],
         "action": "",
         "auto-eval": "Le projet a été vraiment interessant à développer car nous avons tout pensé de A à Z. De plus, je trouve que le quizz est plutôt de qualité même si il manque plus de mini-jeux pour ne pas tomber tout sur la même chose.",
         "images": [
@@ -35,7 +77,23 @@
         "id": 3,
         "title": "Entrepreunariat",
         "description": "  ",
-        "A.C": ["AC35.02 | Maîtriser la qualité en projet Web ou multimédia", "AC35.03 | Concevoir un projet d’entreprise innovante en définissant le nom", "AC35.01 | Piloter un produit, un service ou une équipe"],
+        "AC": [
+            {
+                "code": "AC35.02",
+                "description": "Maîtriser la qualité en projet Web ou multimédia",
+                "justification": "Nous avons conçu un site Web innovant qui répond aux exigences élevées de qualité et de performance."
+            },
+            {
+                "code": "AC35.03",
+                "description": "Concevoir un projet d’entreprise innovante en définissant le nom",
+                "justification": "Nous avons créé une startup avec un modèle d'affaires unique qui répond à un besoin spécifique du marché."
+            },
+            {
+                "code": "AC35.01",
+                "description": "Piloter un produit, un service ou une équipe",
+                "justification": "Nous avons dirigé une équipe dynamique pour développer et lancer notre produit avec succès sur le marché."
+            }
+        ],
         "Situation": "",
         "tache": "",
         "action": "",
@@ -46,4 +104,3 @@
         ]
     }
 ]
-
